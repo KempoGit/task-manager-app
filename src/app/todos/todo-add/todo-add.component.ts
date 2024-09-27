@@ -14,7 +14,7 @@ export class TodoAddComponent {
   textInput: FormControl;
 
   constructor(private store: Store<AppState>) {
-    this.textInput = new FormControl('Hello', Validators.required);
+    this.textInput = new FormControl('', Validators.required);
   }
 
   add() {
